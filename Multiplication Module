@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout type="border">
+  <component pos="top" id="label" text="Example XML Layout" />
+  <component pos="center" id="multiplication" function="5*5" />
+</layout>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+
+package rchs.tsa.math.graph;
+
+import rchs.tsa.math.MathException;
+import rchs.tsa.math.expression.Number1;
+import rchs.tsa.math.expression.Number2;
+import rchs.tsa.math.expression.Product;
+
+public class Multiplication
+{
+  private final Number1 factor1;
+  private final Number2 factor2;
+  private final Product product;
+
+  private final IConstraint[] constraints;
+
+  public Multiplication(Number 1 factor1, Number2 factor2)
+  {
+    product = factor1*factor2;
+  }
+
+  public Number1 getNumber1()
+  {
+    return factor1;
+  }
+
+  public Number1 getNumber2()
+  {
+    return factor2;
+  }
+
+  public Product getProduct()
+  {
+    return product;
+  }
+}
